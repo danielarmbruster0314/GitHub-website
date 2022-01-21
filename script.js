@@ -1,4 +1,13 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
 
-document.querySelector("body").appendChild(h2);
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');  
+    })
+})
