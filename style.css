@@ -42,7 +42,8 @@ html{
 }
 
 body{
-    background: var(--clr-light);
+   /* background: var(--clr-light);*/
+   background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -325,7 +326,12 @@ header{
        grid-area: img;
        position: relative;
        z-index: 2;
+       border-radius: 0px 25px 25px 25px;
     }
+}
+
+p.indent{
+    text-indent: 30px;
 }
 
 /* Footer */
